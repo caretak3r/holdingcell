@@ -5,3 +5,6 @@ sudo dpkg -i cuda-repo-ubuntu2404-13-0-local_13.0.0-580.65.06-1_amd64.deb
 sudo cp /var/cuda-repo-ubuntu2404-13-0-local/cuda-*-keyring.gpg /usr/share/keyrings/
 sudo apt-get update
 sudo apt-get -y install cuda-toolkit-13-0
+
+sudo apt-get install -y nvidia-open
+# sudo apt-get install -y cuda-drivers
