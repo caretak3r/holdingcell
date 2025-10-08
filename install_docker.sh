@@ -17,3 +17,6 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 sudo systemctl status docker
+
+# logout and check if you are a part of the docker group: 
+sudo usermod -aG docker $USER
