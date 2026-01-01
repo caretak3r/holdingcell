@@ -1,0 +1,22 @@
+[project]
+name = "llm-comparisons"
+version = "0.1.0"
+description = "LLM backend comparison tool for benchmarking vLLM, llama.cpp, and Ollama"
+requires-python = ">=3.9"
+dependencies = [
+    "click>=8.1.0",
+    "rich>=13.7.0",
+    "psutil>=5.9.0",
+    "requests>=2.31.0",
+]
+
+[project.scripts]
+llm-compare = "llm_comparisons.main:cli"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W"]
+ignore = []
